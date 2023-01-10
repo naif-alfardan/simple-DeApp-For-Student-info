@@ -3,7 +3,7 @@ import {ethers} from "ethers";
 import Deapp_abi from './abi.json'
 
 const Deapp = () => {
-    const contractAddress='0xd9145CCE52D386f254917e481eB44e9943F39138'
+    const contractAddress='0xEdB64769eC76a00b3520F51bdc6A1aC951cBc3fF'
     const [errorMessage, setErrorMessage] = useState(null);
     const [defaultAccount, setDefaultAccount] = useState(null);
     const [connButtonText, setConnButtonText] = useState('Connect Wallet');
