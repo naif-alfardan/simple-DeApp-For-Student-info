@@ -2,26 +2,27 @@
 pragma solidity ^0.8.4;
 
 contract Student {
-    uint256 totalwaves;
 
-    event NewStudent(address indexed student, string name, uint256 id);
+    event NewStudent(string name);
 
-    struct Student {
-        address student;
-        string name;
-        uint256 id;
-    }
+    // struct Student {
+    //     address student;
+    //     string name;
+    //     uint256 id;
+    // }
 
-    Student[]  students;
+    // Student[] students;
     string std;
 
-    function setStudentsInfo(string memory _name, uint256 _id) public {
+
+    function setStudentsInfo(string memory _name) public {
         // students.push(Student(msg.sender, _name, _id));
         std=_name;
-        emit  NewStudent(msg.sender, _name, _id);
+        emit  NewStudent( _name);
+
     }
 
-    function getStudentInfo() public view returns (Student[] memory){
-        return students;
+    function getStudentInfo() public view returns (string memory){
+        return std;
     }
 }
