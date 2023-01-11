@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "NewStudent",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "getStudentInfo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "setStudentsInfo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SmartContarct.sol": "Student"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SmartContarct.sol": {
+			"keccak256": "0x4e17e2c5c70010a7c5ae03ebc015dbf65a9e1c3df10709e85d61e28b8d999832",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://6a23e97627bd26960778f5f242ee65a31059cd34ba60d2fdee9d3d66eb6de6db",
+				"dweb:/ipfs/QmTDZ3gDM2F1XyT9xcqGhLdmEDrjFLVoRRMB57ZG8nMA1g"
+			]
+		}
+	},
+	"version": 1
+}
