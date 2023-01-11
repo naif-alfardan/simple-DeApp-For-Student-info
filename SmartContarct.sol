@@ -12,10 +12,12 @@ contract Student {
         uint256 id;
     }
 
-    Student[] students;
+    Student[]  students;
+    string std;
 
     function setStudentsInfo(string memory _name, uint256 _id) public {
-        students.push(Student(msg.sender, _name, _id));
+        // students.push(Student(msg.sender, _name, _id));
+        std=_name;
         emit  NewStudent(msg.sender, _name, _id);
     }
 
